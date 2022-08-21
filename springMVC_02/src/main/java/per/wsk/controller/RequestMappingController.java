@@ -17,7 +17,7 @@ public class RequestMappingController {
 
     @RequestMapping(
             value = {"/testRequestMapping", "/test"}//value 可以是数组，支持多个地址的映射
-//            ,method = {RequestMethod.GET, RequestMethod.POST}
+            ,method = {RequestMethod.GET, RequestMethod.POST}
     )
     public String success(){
         return "success";

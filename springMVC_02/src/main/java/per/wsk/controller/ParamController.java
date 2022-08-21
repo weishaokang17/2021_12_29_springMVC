@@ -20,6 +20,11 @@ import java.util.Arrays;
 public class ParamController {
 
 
+    /**
+     * 通过ServletAPI获取
+     * @param request
+     * @return
+     */
     @RequestMapping("/testServletAPI")
     //形参位置的request表示当前请求
     public String testServletAPI(HttpServletRequest request){
