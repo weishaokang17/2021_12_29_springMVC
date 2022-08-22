@@ -75,15 +75,15 @@
     </mvc:interceptors>
 
     <!--配置异常处理-->
-    <!--<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
         <property name="exceptionMappings">
             <props>
-                &lt;!&ndash;表示如果出现 ArithmeticException（数学异常），会跳转到error.html这个页面中&ndash;&gt;
+                <!--表示如果出现 ArithmeticException（数学异常），会跳转到error.html这个页面中-->
                 <prop key="java.lang.ArithmeticException">error</prop>
             </props>
         </property>
-        &lt;!&ndash;设置将异常信息共享在请求域中的键&ndash;&gt;
+        <!--设置将异常信息共享在请求域中的键-->
         <property name="exceptionAttribute" value="ex"></property>
-    </bean>-->
+    </bean>
 
 </beans>

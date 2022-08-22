@@ -53,6 +53,7 @@ public class WebInit extends AbstractAnnotationConfigDispatcherServletInitialize
         CharacterEncodingFilter characterEncodingFilter = new CharacterEncodingFilter();
         characterEncodingFilter.setEncoding("UTF-8");
         characterEncodingFilter.setForceResponseEncoding(true);
+
         HiddenHttpMethodFilter hiddenHttpMethodFilter = new HiddenHttpMethodFilter();
         return new Filter[]{characterEncodingFilter, hiddenHttpMethodFilter};
     }
