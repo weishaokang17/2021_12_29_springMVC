@@ -36,6 +36,8 @@
         </property>
     </bean>
 
+    <!--开启mvc的注解驱动-->
+    <mvc:annotation-driven />
 
     <mvc:view-controller path="/" view-name="index"></mvc:view-controller>
     <!--
@@ -49,8 +51,7 @@
     <mvc:view-controller path="/test_view" view-name="test_view"></mvc:view-controller>
     <mvc:view-controller path="/test_rest" view-name="test_rest"></mvc:view-controller>
 
-    <!--开启mvc的注解驱动-->
-    <mvc:annotation-driven />
+
 
 
 </beans>

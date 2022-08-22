@@ -56,6 +56,12 @@ public class EmployeeController {
         return "redirect:/employee";
     }
 
+    /**
+     * 查询
+     * @param id
+     * @param model
+     * @return
+     */
     @RequestMapping(value = "/employee/{id}", method = RequestMethod.GET)
     public String getEmployeeById(@PathVariable("id") Integer id, Model model){
         Employee employee = employeeDao.get(id);
