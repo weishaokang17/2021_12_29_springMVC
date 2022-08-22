@@ -71,6 +71,7 @@ public class FileUpAndDownController {
             //若不存在，则创建目录
             file.mkdir();
         }
+        //文件上传后的存放路径：详见当前controller同目录下的  上传路径.md文件里面的说明
         String finalPath = photoPath + File.separator + fileName;
         //上传文件
         photo.transferTo(new File(finalPath));
